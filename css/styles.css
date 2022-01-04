@@ -482,7 +482,7 @@
     font-weight: 300;
   }
   
-  .display-1 {
+  /* .display-1 {
     font-size: calc(1.625rem + 4.5vw);
     font-weight: 300;
     line-height: 1.2;
@@ -541,7 +541,7 @@
     font-size: calc(1.375rem + 1.5vw);
     font-weight: 300;
     line-height: 1.2;
-  }
+  } */
   @media (min-width: 1200px) {
     .display-6 {
       font-size: 2.5rem;
@@ -11320,12 +11320,15 @@
     font-weight: 700;
     font-size: 1rem;
     padding: 0.75rem 0;
+    transition: 0.5s;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
     color: #FD285F;
   }
   #mainNav .navbar-nav .nav-item .nav-link.active {
-    color: #FD285F !important;
+    color: #78D5FF !important;
+    font-size: 1.1rem;
+    transform: translateY(-5px);
   }
   @media (min-width: 992px) {
     #mainNav {
@@ -11334,16 +11337,22 @@
     }
     #mainNav .navbar-brand {
       color: rgba(255, 255, 255, 0.7);
+      transition: 0.5s;
     }
     #mainNav .navbar-brand:hover {
-      color: #fff;
+      color: #78D5FF;
+      font-size: 1.3rem;
+      transform: translateY(-5px);
     }
     #mainNav .navbar-nav .nav-item .nav-link {
       color: rgba(255, 255, 255, 0.7);
       padding: 0 1rem;
+      transition: 0.5s;
     }
     #mainNav .navbar-nav .nav-item .nav-link:hover {
-      color: #fff;
+      color: #78D5FF;
+      font-size: 1.15rem;
+      transform: translateY(-5px);
     }
     #mainNav .navbar-nav .nav-item:last-child .nav-link {
       padding-right: 0;
@@ -11369,7 +11378,6 @@
   header.masthead {
     padding-top: 10rem;
     padding-bottom: calc(10rem - 4.5rem);
-    background: linear-gradient(to bottom, rgba(61, 241, 241, 0.5) 0%, rgba(66, 92, 67, 0.5) 100%), url("../assets/img/anime-clouds-16-920x518.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -11377,6 +11385,25 @@
   }
   header.masthead h1, header.masthead .h1 {
     font-size: 2.25rem;
+  }
+  header.masthead video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* opacity: 0.8; */
+    z-index: -31;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, rgba(184,43,39,.2), rgba(21,101,192,.3));
+    z-index: -20;
   }
   @media (min-width: 992px) {
     header.masthead {
