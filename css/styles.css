@@ -11512,7 +11512,7 @@
     text-align: center;
     opacity: 0;
     color: #fff;
-    background: rgba(120, 213, 255, 0.5); 
+    background: rgba(33,37,41,.9); 
     transition: opacity 0.25s ease;
     text-align: center;
   }
