@@ -98,6 +98,10 @@
     line-height: 1.2;
   }
 
+  h4, .h4 {
+    color: #78D5FF;
+  }
+
   ab {
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -109,6 +113,7 @@
   }
   ab:hover {
     color: #505050;
+    transform: translateY(-5px);
   }
   
   h1, .h1 {
@@ -123,15 +128,13 @@
   h2, .h2 {
     font-size: calc(1.325rem + 0.9vw);
   }
-  ab {
-    font-size: calc(1.325rem + 0.9vw);
-  }
+  
   @media (min-width: 1200px) {
     h2, .h2 {
       font-size: 2rem;
     }
     ab {
-      font-size: 2rem;
+      font-size: 3.5rem;
     }
   }
   
@@ -11322,7 +11325,7 @@
   }
 
   .page-section-skills {
-    padding: 14rem 0;
+    padding: 8rem 0;
   }
   
   .page-section-git {
